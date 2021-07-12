@@ -251,3 +251,25 @@ td, th {
     width: 560px;
     margin: 2em auto;
 }
+
+main > p {
+    background: rgba(63, 153, 175, 0.596);
+}
+/*selecionar os filhos diretos de <main>,com o sinal >, e todos
+os outros parágrafos serão ignorados, afinal são filhos diretos 
+de outras tags e não de <main>.*/
+
+img + p { 
+    balckground: rgba(23, 116, 77, 0.76);
+}
+/*usamos img como elemento âncora e para o primeiro irmão usamos o sinal de "+"*/
+
+img ~ p {
+    background: rgb(236, 236, 86);
+} 
+/*Para selecionar todos os parágrafos localizados depois de uma imagem usamos o seletor ~ */
+
+/*Se quisermos excluir todos os parágrafos que não compõe missao, escreveremos:*/
+.principal p:not(#missao) {
+    background: orange;
+}
