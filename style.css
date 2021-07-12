@@ -239,10 +239,22 @@ td, th {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+
+    box-shadow: 10px 10px 30px #000000;
+/*A sombra é resultado de um efeito de "luz" que lançamos sobre um elemento. 
+O nome da propriedade que gera esse efeito é box-shadow, que possui a propriedade
+do eixo X, T e uma cor. O 3º elemento é o blur(sólido p/transparente), desfoque da sombra com pixels.*/
+}
+
+ .imagem-beneficios:hover {
+    opacity: 0.3;
  }
 
 .utensilios {
-    width: 120px;
+   /*width: 120px;*/
+    width: calc(20% - 35px); /* usa as medidas proporcionais*/
     float: left;
     margin: 0 20px 20px 0;
  }
@@ -252,24 +264,24 @@ td, th {
     margin: 2em auto;
 }
 
-main > p {
+/*main > p {
     background: rgba(63, 153, 175, 0.596);
 }
 /*selecionar os filhos diretos de <main>,com o sinal >, e todos
 os outros parágrafos serão ignorados, afinal são filhos diretos 
 de outras tags e não de <main>.*/
 
-img + p { 
+/*img + p { 
     balckground: rgba(23, 116, 77, 0.76);
 }
 /*usamos img como elemento âncora e para o primeiro irmão usamos o sinal de "+"*/
 
-img ~ p {
+/*img ~ p {
     background: rgb(236, 236, 86);
 } 
 /*Para selecionar todos os parágrafos localizados depois de uma imagem usamos o seletor ~ */
 
 /*Se quisermos excluir todos os parágrafos que não compõe missao, escreveremos:*/
-.principal p:not(#missao) {
+/*.principal p:not(#missao) {
     background: orange;
-}
+}*/
