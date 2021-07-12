@@ -285,3 +285,21 @@ de outras tags e não de <main>.*/
 /*.principal p:not(#missao) {
     background: orange;
 }*/
+
+
+/*Por meio de media queries, perguntaremos ao navegador qual é o tamanho da tela em questão e, 
+se for aquele que desejamos, entregaremos o estilo correto. @media, com o valor do tipo de tela screen e a pesquisa.*/
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-benef, .mapa-conteudo, .video {
+        width:auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+       position: static; 
+    }
+    .lista-beneficios, .imagembeneficios {
+        width: 100%;
+    }
+}
