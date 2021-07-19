@@ -1,5 +1,5 @@
 import BotaoConclui from './concluirTarefa.js'
-import BotaoDeleta from './deletatarefa.js'
+import BotaoDeleta from './deletaTarefa.js'
     
     const criarTarefa = (evento) => {
 
@@ -22,7 +22,6 @@ import BotaoDeleta from './deletatarefa.js'
     input.value = " "
 
 }
-
 const novaTarefa = document.querySelector('[data-form-button]')
 
 novaTarefa.addEventListener('click', criarTarefa)

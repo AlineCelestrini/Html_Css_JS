@@ -16,5 +16,6 @@ const concluirTarefa = (evento) => {
     const tarefaCompleta = botaoConclui.parentElement
 
     tarefaCompleta.classList.toggle('done')
+    
 }
  export default BotaoConclui

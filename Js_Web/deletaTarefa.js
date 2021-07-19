@@ -3,6 +3,7 @@ const BotaoDeleta = () => {
     
     botaoDeleta.innerText = 'deletar'
     botaoDeleta.addEventListener('click', deletarTarefa)
+    
     return botaoDeleta
 }
 
